@@ -1,130 +1,130 @@
+Marketing Campaign Effectiveness Analysis – Power BI
+----------------------------------------------------
+
 This project is a complete Power BI dashboard built to analyze marketing campaign performance across channels, regions, customer segments, and time periods. It includes data cleaning, modeling, DAX calculations, and interactive visual insights to support data-driven marketing decisions.
 
 Project Overview
+----------------------------------------------------
 
 The goal of this project is to understand:
 
-Which marketing channels generate the highest ROI
+- Which marketing channels generate the highest ROI
 
-Campaign performance across regions and customer segments
+- Campaign performance across regions and customer segments
 
-Conversion trends over time
+- Conversion trends over time
 
-Budget utilization and revenue contribution
+- Budget utilization and revenue contribution
 
-Factors influencing campaign success
+- Factors influencing campaign success
 
 What’s Included
+----------------------------------------------------
 
-Cleaned & validated Marketing Campaign dataset
+- Cleaned & validated Marketing Campaign dataset
 
-Star Schema data model (Campaign, Customer, Channel, Date)
+- Star Schema data model (Campaign, Customer, Channel, Date)
 
-DAX measures for Conversions, Revenue, ROI, CTR
+- DAX measures for Conversions, Revenue, ROI, CTR
 
-6-page interactive Power BI dashboard
+- 6-page interactive Power BI dashboard
 
-AI visuals (Key Influencers & Decomposition Tree)
+- AI visuals (Key Influencers & Decomposition Tree)
 
-Final business insights & recommendations
+- Final business insights & recommendations
 
 Data Cleaning
+----------------------------------------------------
 
 Performed in Power Query:
 
-Removed duplicate campaign records
+- Removed duplicate records
 
-Handled missing budget and conversion values
+- Handled missing and inconsistent values
 
-Standardized date formats
+- Standardized campaign & channel names
 
-Cleaned channel and region fields
+- Validated spend and revenue fields
 
-Created a proper Date table
-
-Validated customer segment data
+- Created a proper Date table for time analysis
 
 Data Model (Star Schema)
+----------------------------------------------------
 
 Fact Table:
 
-Campaign Performance
+- Campaign / Marketing Data
 
 Dimension Tables:
 
-Channel
+- Customer
 
-Customer Segment
+- Channel
 
-Region
+- Date
 
-Date
-
-This model improves report performance and simplifies DAX calculations.
+This structure improves performance and simplifies DAX calculations.
 
 Dashboard Pages
+----------------------------------------------------
 
-1. Marketing Campaign Analysis
-KPIs, total spend, revenue, ROI, and campaign reach overview.
+- Marketing Campaign Analysis: KPIs, revenue trends, channel performance, spend vs revenue analysis
 
-2. Campaign Performance
-Channel performance, conversions, CTR, and cost analysis.
+- Campaign Performance: ROI, conversion rates, campaign comparison table, regional insights
 
-3. Customer & Regional Insights
-Segment engagement and region-wise campaign impact.
+- Strategy & Investment Insights: Budget allocation, underperforming campaigns, investment recommendations
 
-4. Campaign Drivers Analysis (Decomposition Tree)
-Breakdown of revenue and conversions by multiple influencing factors.
+- Decomposition Tree: Breakdown of revenue/ROI by channel, region, and campaign type
 
-5. Influencer Insights Dashboard (Key Influencers)
-Identifies key drivers impacting campaign success and ROI.
+- Key Influencers: Factors impacting campaign success and conversion performance
 
-6. Marketing Insights Q&A
-Interactive natural-language query page for business users.
+- Q&A Dashboard: Natural language queries for interactive business insights
 
 Key DAX Measures
-Total Spend = SUM(Campaign[Spend])
+----------------------------------------------------
 
-Total Revenue = SUM(Campaign[Revenue])
+- Total Revenue = SUM(Campaign[Revenue])
 
-Conversions = SUM(Campaign[Conversions])
+- Total Spend = SUM(Campaign[Spend])
 
-ROI = DIVIDE([Total Revenue] - [Total Spend], [Total Spend], 0)
+- ROI = DIVIDE([Total Revenue] - [Total Spend], [Total Spend], 0)
 
-CTR % = DIVIDE(SUM(Campaign[Clicks]), SUM(Campaign[Impressions]), 0)
+- Conversion Rate = 
+DIVIDE(SUM(Campaign[Conversions]), SUM(Campaign[Clicks]), 0)
 
 Key Insights
+----------------------------------------------------
 
-Digital channels generate higher ROI than traditional media
+- Search Ads generate the highest ROI and revenue
 
-Certain regions show strong conversion performance
+- TV Ads show strong conversion performance
 
-Some campaigns have high spend but low returns
+- Some campaigns have high spend but low returns
 
-Customer segments respond differently to campaign types
+- Regional performance varies significantly
 
-Seasonal trends impact campaign effectiveness
+- Conversion efficiency differs by channel
 
 Recommendations
+----------------------------------------------------
 
-Increase investment in high-ROI channels
+- Increase investment in high-ROI channels like Search Ads
 
-Optimize or discontinue low-performing campaigns
+- Optimize or reduce spend on underperforming campaigns
 
-Improve targeting for low-conversion segments
+- Improve audience targeting strategies
 
-Adjust budget allocation based on regional performance
+- Enhance conversion funnels for better performance
 
-Use influencer insights to refine future strategies
+- Allocate budgets based on data insights
 
 Tools Used
+----------------------------------------------------
 
-Power BI Desktop
+- Power BI Desktop
 
-Power Query
+- Power Query
 
-DAX
+- DAX
 
-Data Modeling
-
-AI Visuals (Key Influencers & Decomposition Tree)
+- Data Modeling
